@@ -1,0 +1,98 @@
+\documentclass[11pt]{report}
+%%%%%%%%%%%%%%%%%%%%
+
+\input{packages}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{pdftitle = Report, pdfauthor = {First Last}, pdfstartview=FitH, pdfkeywords = essay, pdfpagemode=FullScreen, colorlinks, anchorcolor = red, citecolor = blue, urlcolor=blue, filecolor=green, linkcolor=codepurple, plainpages=false}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\bibitemsep}\setlength{\bibitemsep}{.2\baselineskip plus .05\baselineskip minus .05\baselineskip}
+\newlength{\bibparskip}\setlength{\bibparskip}{0cm}
+\let\oldthebibliography\thebibliography
+\renewcommand\thebibliography
+\oldthebibliography
+  \setlength{\parskip}{\bibitemsep}
+  \setlength{\itemsep}{\bibparskip}
+%setmainfont{TeX Gyre Pagella}
+
+%%%%%%%%%%%%%%%%%%%%%%%%55
+\pagestyle{fancy}
+\chead{}
+\lhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{Page \thepage}
+
+% Top and Bottom Line Rules
+\renewcommand{\headrulewidth}{0.15pt} %0.4pt
+\renewcommand{\footrulewidth}{0.15pt}
+\fancyheadoffset{1pt}
+\fancyfootoffset{1pt}
+ 
+% Line spacing
+\renewcommand{\baselinestretch}{1.5} %1.5
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\Huge{EVERYDAY JOURNAL}}
+\author{\\ \Large{Pravin Sharma}
+% \\ Advisor: Prof. Shailaja Mahamuni
+\\
+\vspace{3.5cm}
+\\
+\\
+\\
+\\ 
+\\
+\\
+%\\November 2022
+}
+%\date{November 2022}
+\date{\Huge{2025}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+% \endtit
+
+
+\begin{document}
+\sloppy
+\thispagestyle{headings}
+\maketitle
+
+% \FloatBarrier
+\pagenumbering{roman}
+% \chapter*{Preface}
+% \input{preface.tex}
+
+% \newpage
+%\pagenumbering{roman}
+\tableofcontents
+\thispagestyle{plain}
+% \listoffigures
+% \listoftables
+
+% Include the list of abbreviations here if required.
+\newpage
+\pagenumbering{arabic}
+
+
+\newpage
+
+\setcounter{section}{0}
+
+
+\include{Months/January}
+% \include{Months/February}
+% \include{Months/March}
+% \include{Months/April}
+% \include{Months/May}
+% \include{Months/June}
+% \include{Months/July}
+% \include{Months/August}
+% \include{Months/September}
+% \include{Months/ October}
+% \include{Months/November}
+% \include{Months/December}
+
+
+\end{document}
